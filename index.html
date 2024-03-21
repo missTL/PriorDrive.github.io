@@ -9,16 +9,6 @@
   <title>MapTracker: Tracking with Strided Memory Fusion for Consistent Vector HD Mapping</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-  </script>
-
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
@@ -33,21 +23,13 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
   <script src="./static/js/index.js"></script>
 </head>
-<body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-</nav>
+
+<body>
 
 
 <section class="hero">
@@ -56,7 +38,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">MapTracker: Tracking with Strided Memory Fusion for Consistent Vector HD Mapping</h1>
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-4 publication-authors">
             <span class="author-block">
               <a href="https://jcchen.me/">Jiacheng Chen</a><sup>1*</sup>,</span>
             <span class="author-block">
@@ -129,22 +111,20 @@
 </section>
 
 
-<section class="section">
+<section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="columns is-centered" >
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <img src="static/images/page-head-0018.gif" alt="0018 nuscenes">
-          </div>
-        </div>
-      </div>
-    </div>
 
-    </br>
-    </br>
+            <div class="hero-body" style="text-align: center">
+                <div class="columns is-centered">
+                        <img src="./static/images/page-head-0018.gif">
+                </div>
+            </div>
+  </div>
+</section>  
 
+
+<section class="section">
+    <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -197,7 +177,7 @@
   <div class="container is-max-desktop">
 
     <div class="columns">
-      <h2 class="title is-2"style="text-align: left;">Example reconstruction results</h2>
+      <h2 class="title is-3"style="text-align: left;">Example reconstruction results</h2>
     </div>
 
     <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
@@ -256,7 +236,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2">Comparisons with baselines</h2>
+        <h2 class="title is-3">Comparisons with baselines</h2>
 
       </div>
     </div>
@@ -266,11 +246,11 @@
     <!-- More results. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2">More merged global reconstruction results</h2>
+        <h2 class="title is-3">More merged global reconstruction results</h2>
       
 
         <!-- Interpolating. -->
-        <h3 class="title is-3">nuScenes</h3>
+        <h3 class="title is-4" style="text-align: center;">nuScenes dataset</h3>
         <!-- <div class="columns is-vcentered interpolation-panel"> -->
           <!-- <video id="nusc-random-video" controls playsinline autoplay height="100%" width="100%">
             <source src="./static/videos/nusc_random.mp4"
@@ -280,7 +260,7 @@
         <br/>
         <br/>
 
-        <h3 class="title is-3">Agroverse2</h3>
+        <h3 class="title is-4" style="text-align: center;">Agroverse2 dataset</h3>
         <!-- <video id="av2-random-video" controls playsinline autoplay height="100%" width="100%">
           <source src="./static/videos/random_av2.mp4"
                   type="video/mp4">
