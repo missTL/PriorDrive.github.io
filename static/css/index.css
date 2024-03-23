@@ -78,6 +78,14 @@ body {
     text-decoration: underline;
 }
 
+.publication-affiliations a {
+   color: #808080 !important;
+}
+
+.publication-affiliations a:hover {
+    text-decoration: underline;
+}
+
 .author-block {
   display: inline-block;
 }
