@@ -140,18 +140,27 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper presents a vector HD-mapping algorithm that formulates the mapping as a tracking 
-            task and uses a history of memory latents to ensure consistent reconstructions over time.
+           High-Definition Maps (HD maps) are essential for the precise navigation and decision-making of autonomous vehicles, 
+            yet their creation and upkeep present significant cost and timeliness challenges. The online construction of HD maps 
+            using on-board sensors has emerged as a promising solution; however, these methods can be impeded by incomplete data 
+            due to occlusions and inclement weather. This paper proposes the PriorDrive framework to addresses these limitations 
+            by harnessing the power of prior maps, significantly enhancing the robustness and accuracy of online HD map construction.
           </p>
           <p>
-            Our method, <i>MapTracker</i>, accumulates a sensor stream into memory buffers of two latent 
-            representations: 1) Raster latents in the bird's-eye-view (BEV) space and 2) Vector latents over 
-            the road elements (i.e., pedestrian-crossings, lane-dividers, and road-boundaries).
-            The approach borrows the query propagation paradigm from the tracking literature that explicitly associates tracked road elements from the previous frame to the current, while fusing a subset of memory latents selected with distance strides to further enhance temporal consistency.A vector latent is decoded to reconstruct the geometry of a road element. 
+           Our approach integrates a variety of prior maps, such as OpenStreetMap's Standard Definition Maps (SD maps), outdated HD maps 
+            from vendors, and locally constructed maps from historical vehicle data. To effectively encode this prior information into
+            online mapping models, we introduce a Hybrid Prior Representation (HPQuery) that standardizes the representation of diverse map elements.
           </p>
           <p>
-            The paper further makes benchmark contributions by 1) Improving processing code for existing datasets 
-            to produce consistent ground truth with temporal alignments and 2) Augmenting existing mAP metrics with consistency checks. MapTracker significantly outperforms existing methods on both nuScenes and Agroverse2 datasets by over 8% and 19% on the conventional and the new consistency-aware metrics, respectively.
+            At the core of PriorDrive is the Unified Vector Encoder (UVE), which employs a dual encoding mechanism to process vector data. 
+            The intra-vector encoder captures fine-grained local features, while the inter-vector encoder integrates global context. Furthermore, 
+            we propose a segment-level and point-level pre-training strategy that enables the UVE to learn the prior distribution of vector data, 
+            thereby improving the encoder's generalizability and performance.
+          </p>
+          <p>
+            Through extensive testing on the nuScenes dataset, we demonstrate that PriorDrive is highly compatible with various online mapping models
+            and substantially improves map prediction capabilities. The integration of prior maps through the PriorDrive framework offers a robust solution 
+            to the challenges of single-perception data, paving the way for more reliable autonomous vehicle navigation.
           </p>
         </div>
       </div>
