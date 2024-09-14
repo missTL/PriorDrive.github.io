@@ -177,14 +177,14 @@
 
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+<!--     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-2">Video</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/L7a89I92eDs" title="MapTracker: Tracking with Strided Memory Fusion for Consistent Vector HD Mapping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
     
 
@@ -192,135 +192,50 @@
 </section>
 
 
-<section class="section">
-
-  <!-- <div class="column is-full-width"></div> -->
-
+<section class="hero teaser">
   <div class="container is-max-desktop">
-
-    <!-- Example results -->
-    <div class="columns">
-      <h2 class="title is-4"style="text-align: left;">Example reconstruction results</h2>
-    </div>
-
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="columns is-centered" >
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-              <source src="./static/videos/scene-0523.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="columns is-centered" >
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-              <source src="./static/videos/scene-0524.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="columns is-centered" > -->
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-              <source src="./static/videos/scene-335aa.mp4" type="video/mp4">
-            </video>
-          </div>
-        <!-- </div>
-      </div> -->
-    </div>
-
-
-    <!-- Comparisons -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4">Comparisons with baselines</h2>
-      </div>
-    </div>
-
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="columns is-centered" >
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <!-- <img src="static/images/scene-0523.gif" alt="0523 nuscenes"> -->
-            <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-              <source src="./static/videos/compare_108.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="columns is-centered" >
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <!-- <img src="static/images/scene-0523.gif" alt="0523 nuscenes"> -->
-            <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-              <source src="./static/videos/compare_99.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="columns is-centered" style="display: flex; align-items: center; height: 100%;">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="columns is-centered" >
-          <div class="column content" style="display: flex; justify-content: center; ">
-            <!-- <img src="static/images/scene-0523.gif" alt="0523 nuscenes"> -->
-            <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-              <source src="./static/videos/compare_555.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- More results. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-4">More merged global reconstruction results</h2>
-      
-        <h3 class="title is-5" style="text-align: center;">nuScenes dataset</h3>
-        <!-- <div class="columns is-vcentered interpolation-panel"> -->
-          <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-            <source src="./static/videos/nusc_random.mp4" type="video/mp4">
-          </video>
-        
-        <br/>
-        <br/>
-
-        <h3 class="title is-5" style="text-align: center;">Agroverse2 dataset</h3>
-        <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
-          <source src="./static/videos/random_av2.mp4" type="video/mp4">
-        </video>
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
+            <div class="hero-body" style="text-align: center">
+                <div class="columns is-centered">
+                     <img src="./static/images/vis.jpg" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                </div>
+            </div>
   </div>
-</section>
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Qualitative results with and w/o online local prior. Prior maps can help restore obscured map 
+            elements and make predictions more complete and accurate.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>  
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+            <div class="hero-body" style="text-align: center">
+                <div class="columns is-centered">
+                     <img src="./static/images/result.png" alt="Description of the image" style="max-width: 100%; height: auto;" />
+                </div>
+            </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Performance of various online mapping models with different prior maps on nuScenes within a 60m x 30m perception range.
+            “C” denotes camera input. The best results using the same backbone are highlighted in bold. The SD map is sourced from 
+            OpenStreetMap. The online local map refers to the historical prediction results. As the
+            nuScenes dataset lacks existing HD maps, we followed the approach of MapEX to create an HD map-EX*, simulating
+            existing HD maps by removing pedestrian crossings and lane dividers, while retaining only the road boundaries.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>  
+  
+  
 
 
 <section class="section" id="BibTeX">
